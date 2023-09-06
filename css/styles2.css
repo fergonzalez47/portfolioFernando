@@ -37,7 +37,7 @@ nav ul li {
 
 h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: clamp(17px, 4rem, 48px);
     text-align: center;
 }
 
@@ -72,12 +72,13 @@ nav ul {
     gap: 25px;
     margin-left: auto;
     margin-right: 2em;
+    
 }
 
 nav ul li {
     list-style: none;
     margin: 0;
-    font-size: clamp(11px, 3vw, 23px);
+    font-size: clamp(12px, 2.25vw, 20px);
     transition: color 0.3s;
 }
 
@@ -205,8 +206,8 @@ main {
     nav ul {
 
         flex-wrap: wrap;
-        margin: 0 auto 1rem;
         text-align: center;
+        justify-content: center;
 
     }
 }
@@ -231,7 +232,7 @@ main {
 
     h1 {
         margin: initial;
-        font-size: 3rem;
+        /* font-size: 3rem; */
         margin-left: 1rem;
         text-align: initial;
     }
