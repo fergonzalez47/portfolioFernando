@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-size: clamp(20px, 2.5rem, 42px);
+    font-size: clamp(12px, 1.3rem, 22px);
     line-height: 1.5;
 }
 
@@ -76,7 +76,7 @@ nav ul {
 nav ul li {
     list-style: none;
     margin: 0;
-    font-size: clamp(12px, 3vw, 23px);
+    font-size: clamp(12px, 4vw, 23px);
     transition: color 0.3s;
 }
 
