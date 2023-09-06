@@ -38,6 +38,7 @@ nav ul li {
 h1 {
     margin: 0;
     font-size: 2rem;
+    text-align: center;
 }
 
 
@@ -163,9 +164,7 @@ main {
     margin: 0 auto;
 }
 
-.intro {
-    border: 3px solid black;
-}
+
 
 
 .intro img {
@@ -219,7 +218,7 @@ main {
 @media (min-width: 1024px) {
     .intro img {
 
-        max-width: 200px;
+        max-width: 190px;
         border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
@@ -227,12 +226,14 @@ main {
 
     .img-container {
         float: left;
+        margin: 0.5rem;
     }
 
     h1 {
         margin: initial;
         font-size: 3rem;
         margin-left: 1rem;
+        text-align: initial;
     }
 
     .info-container p {
