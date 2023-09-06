@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Barlow:wght@600&display=swap');
+
+:root {
+    --colorCardinal: #BE3749;
+    --colorIsabelline: #F2EFEA;
+    --colorViolet: #231651;
+    --colorBlackOlive: #25291C;
+    --colorSkyBlue: #0acdff;
+    
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Albert Sans', sans-serif;
+    color: var(--colorBlackOlive);
+}
+
+h1, h2, h3, h4, h5, h6, nav ul li {
+    font-family: 'Barlow', sans-serif;
+    color: var(--colorCardinal);
+}
+
+/******** nav ********/
+/******** nav ********/
+/******** nav ********/
+
+nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    background-color: var(--colorViolet);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+    /* Agregar desplazamiento si es necesario */
+
+}
+
+nav a {
+    color: var(--colorIsabelline);
+    text-decoration: none;
+
+}
+
+nav ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0.8em 0px;
+    font-size: clamp(18px, 4vw, 36px);
+}
+
+body main {
+    font-size: 3em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 8fr;
+}
+
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.intro img {
+    max-width: 200px;
+}
