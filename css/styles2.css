@@ -241,6 +241,14 @@ main {
 
 
 
+/*PROYECTOS*/
+
+
+.project img {
+    max-width: 300px;
+}
+
+
 /*RESPONSIVE*/
 
 
