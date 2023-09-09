@@ -208,6 +208,7 @@ main {
 
 .resource-dashboard-img {
     max-width: 64%;
+    min-width: 60%;
 }
 
 /*SKILLS*/
