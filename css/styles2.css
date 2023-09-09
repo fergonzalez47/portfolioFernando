@@ -37,7 +37,7 @@ nav ul li {
 
 h1 {
     margin: 0;
-    font-size: clamp(17px, 4rem, 48px);
+    font-size: clamp(14px, 4rem, 48px);
     text-align: center;
 }
 
@@ -153,6 +153,7 @@ nav ul a:hover {
 #logo-3 {
     align-self: start;
     grid-area: gonzalez;
+
 }
 
 /********************MAIN************************/
@@ -190,7 +191,7 @@ main {
 .intro img {
 
     max-width: 180px;
-    border-radius: 5%;
+    border-radius: 12%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
@@ -291,7 +292,12 @@ main {
 
     .img-container {
         float: left;
-        margin: 0.5rem;
+        margin: 1.5rem;
+    }
+
+    .intro img {
+        max-width: 140px;
+        border-radius: 40%;
     }
 
     h1 {
@@ -303,6 +309,7 @@ main {
 
     .info-container p {
         padding: 1.5rem;
+        align-items: center;
     }
 
     .skills {
