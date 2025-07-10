@@ -162,7 +162,7 @@
     }
 
     .nav-menu {
-        opacity: 0.9;
+        opacity: 0.85;
         position: fixed;
         left: -100%;
         top: 100px;
