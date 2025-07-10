@@ -58,14 +58,30 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        link.addEventListener('click', function (e) {
-            if (!this.parentElement.classList.contains('dropdown') || window.innerWidth <= 768) {
-                e.preventDefault();
-                navLinks.forEach(navLink => navLink.classList.remove('active'));
-                this.classList.add('active');
-                setIndicatorPosition(this);
-            }
-        });
+        // link.addEventListener('click', function (e) {
+        //     if (!this.parentElement.classList.contains('dropdown') || window.innerWidth <= 768) {
+        //         e.preventDefault();
+        //         navLinks.forEach(navLink => navLink.classList.remove('active'));
+        //         this.classList.add('active');
+        //         setIndicatorPosition(this);
+        //     }
+        // });
+
+        // if (this.getAttribute('href').startsWith('#')) {
+        //     e.preventDefault();
+        //     const targetId = this.getAttribute('href').substring(1);
+        //     const target = document.getElementById(targetId);
+        //     if (target) {
+        //         window.scrollTo({
+        //             top: target.offsetTop - 180, // ajusta según altura del header
+        //             behavior: 'smooth'
+        //         });
+        //     }
+        //     navLinks.forEach(navLink => navLink.classList.remove('active'));
+        //     this.classList.add('active');
+        //     setIndicatorPosition(this);
+        // }
+        
     });
 
     // Reset indicator position when mouse leaves the nav menu
@@ -133,25 +149,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
         switch (theme) {
             case 'blue':
-                primaryColor = '#12c2e9';
-                secondaryColor = '#c471ed';
+                
+                primaryColor = '#4bc94b';
+                secondaryColor = '#71faff';
+                accentColor = '#4bc94b';
                 break;
             case 'green':
-                primaryColor = '#11998e';
-                secondaryColor = '#38ef7d';
+                primaryColor = '#011f06';
+                secondaryColor = '#63df73';
+                accentColor = '#FFF8CB';
                 break;
-            case 'purple':
-                primaryColor = '#834d9b';
-                secondaryColor = '#d04ed6';
+            case 'red':
+                primaryColor = '#270302';
+                secondaryColor = '#A70C0A';
+                accentColor = '#F88E8C';
                 break;
             default: // Default theme
-                primaryColor = '#FF5F6D';
-                secondaryColor = '#FFC371';
+            
+                primaryColor = '#131b22';
+                secondaryColor = '#4bc94b';
         }
 
         // Update CSS variables
         document.documentElement.style.setProperty('--primary-color', primaryColor);
         document.documentElement.style.setProperty('--secondary-color', secondaryColor);
+        document.documentElement.style.setProperty('--accent-color', accentColor);
 
         // Update gradient elements
         const gradientElements = [

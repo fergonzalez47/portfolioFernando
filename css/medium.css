@@ -1,4 +1,7 @@
 @media screen and (min-width: 576px) {
+
+
+
     .content {
 
         grid-template-columns: repeat(2, auto);
@@ -51,6 +54,15 @@
 
 
     /* education */
+
+        .education-cards-div {
+   
+            
+            justify-self: center; 
+            padding: 2rem 1rem;
+        }
+
+
     .education-images {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -59,6 +71,30 @@
 
 
 @media screen and (min-width: 800px) {
+
+    /* navmenu */
+
+    .badge {
+        position: absolute;
+        /* top: -5px; */
+        bottom: -1px;
+        right: 0px;
+        background: linear-gradient(135deg, #4bc94b,
+                #71faff);
+        color: white;
+        /* border-radius: 50%; */
+        width: 65px;
+        height: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        transform: scale(0);
+        transition: transform 0.3s ease;
+        animation: pulse 2s infinite;
+    }
+
 
     .contact-email-link,
     .contact-github-link,
@@ -71,7 +107,28 @@
         justify-items: center;
     }
 
-        .education-card-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    .education-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 1rem;
+    }
+
+
+    .education-container {
+
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .education-card {
+        padding: 1.8rem;
+
+    }
+    /* footer  */
+
+
+
+    .footer-container {
+        flex-direction: column;
+    }
 }

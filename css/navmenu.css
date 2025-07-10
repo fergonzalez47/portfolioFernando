@@ -1,10 +1,16 @@
+:root {
+    --primary-color: #131b22;
+    --secondary-color: #71faff;
+    --accent-color: #4bc94b;
+}
+
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #131b22;
+    background-color: var(--primary-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -62,13 +68,13 @@
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(to right, #4bc94b, #71faff);
+    background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
     transition: width 0.3s ease;
     border-radius: 3px;
 }
 
 .nav-link:hover {
-    color: #71faff;
+    color: var(--accent-color);
 }
 
 .nav-link:hover::before {
@@ -76,7 +82,7 @@
 }
 
 .nav-link.active {
-    color: #71faff;
+    color: var(--secondary-color);
 }
 
 .nav-link.active::before {
@@ -144,7 +150,7 @@
     bottom: -2px;
     height: 4px;
     border-radius: 3px;
-    background: linear-gradient(to right, #4bc94b, #71faff);
+    background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
     transition: all 0.3s ease;
 }
 
@@ -157,9 +163,9 @@
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 110px;
         flex-direction: column;
-        background-color: #131b22;
+        background-color: var(--primary-color);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -224,34 +230,38 @@
 
 /* Color Themes */
 .theme-btn.default {
-    background: linear-gradient(135deg, #4bc94b, #71faff);
-    
+    background: linear-gradient(135deg, #131b22, #4bc9be);
+
 }
 
 .theme-btn.blue {
-    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+    background: linear-gradient(135deg, #131b22, #2ca3b8);
 }
 
 .theme-btn.green {
-    background: linear-gradient(135deg, #121869, #ceb02e);
+    background: linear-gradient(135deg, #011f06, #63df73);
 }
 
-.theme-btn.purple {
-    background: linear-gradient(135deg, #b272ce, #a931af);
+.theme-btn.red {
+    background: linear-gradient(135deg, #91000c, #3C0302);
 }
 
 
 
 /* Notification Badge */
-.badge {
+/* .badge {
+
     position: absolute;
-    top: -5px;
-    right: -10px;
-    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+    top: 85%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+
+    background: linear-gradient(135deg, #4bc94b,
+            #71faff);
     color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+
+    width: 65px;
+    height: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,7 +270,7 @@
     transform: scale(0);
     transition: transform 0.3s ease;
     animation: pulse 2s infinite;
-}
+} */
 
 .badge.show {
     transform: scale(1);
@@ -268,7 +278,7 @@
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 95, 109, 0.7);
+        box-shadow: 0 0 0 0 rgba(181, 199, 23, 0.7);
     }
 
     70% {
