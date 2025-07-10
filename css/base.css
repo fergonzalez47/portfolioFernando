@@ -144,7 +144,7 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
 .description-container,
 .projects-container,
 .div-contact-container {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .projects-container, .div-contact-container {
@@ -164,9 +164,10 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
 }
 
 
-.description-container p, .div-contact-container p {
-    margin: .5rem auto .5rem auto;
+.description-container p, .div-contact-container p, .contact-description p {
+    margin: .75rem auto .75rem auto;
     color: #fff;
+    text-align: center ;
 
 
 }
@@ -405,7 +406,7 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
 
 /* Sección educativa moderna */
 .education-cards-div {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     max-width: 1700px;
     margin: 0 auto;
 }
@@ -420,7 +421,7 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
 .education-card-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 /* Tarjeta individual */
