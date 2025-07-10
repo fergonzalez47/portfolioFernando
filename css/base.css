@@ -127,6 +127,7 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
     gap: .75rem;
     justify-content: center;
     padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 /* sobre mi */
