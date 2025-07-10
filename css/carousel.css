@@ -1,0 +1,195 @@
+@import url('https://fonts.bunny.net/css?family=abel:400');
+
+/* Variables raíz */
+:root {
+    --items: 6;
+    --carousel-duration: 40s;
+    --carousel-width: min(80vw, 1200px);
+    --carousel-item-width: 280px;
+    --carousel-item-height: 400px;
+    --carousel-item-gap: 2rem;
+
+    --bg-dark: rgb(2, 6, 24);
+    --bg-light: rgb(229, 229, 229);
+    --txt-light: rgb(10, 10, 10);
+    --txt-dark: rgb(245, 245, 245);
+}
+
+/* Responsive override */
+@media (min-width: 600px) {
+    :root {
+        --carousel-duration: 30s;
+    }
+}
+
+/* Carousel principal */
+.carousel {
+    position: relative;
+    width: var(--carousel-width);
+    height: var(--carousel-item-height);
+    overflow: clip;
+}
+
+
+
+
+/* Filtro de máscara (opcional, solo si se usa) */
+.carousel[mask] {
+    mask-image: linear-gradient(to right, transparent, white 8% 92%, transparent);
+}
+
+.carousel[reverse]>article {
+    animation-direction: reverse;
+}
+
+.carousel:hover>article {
+    animation-play-state: paused;
+}
+
+.carousel>article {
+    position: absolute;
+    top: 0;
+    left: calc(100% + var(--carousel-item-gap));
+    width: var(--carousel-item-width);
+    height: var(--carousel-item-height);
+    display: grid;
+    grid-template-rows: 150px 50px auto;
+    gap: 0.25rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: white;
+    color: #314158;
+
+    animation-name: marquee;
+    animation-duration: var(--carousel-duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--carousel-duration) / var(--items) * var(--i) * -1);
+    will-change: transform;
+}
+
+/* Índices de los items */
+.carousel>article:nth-child(1) {
+    --i: 0;
+}
+
+.carousel>article:nth-child(2) {
+    --i: 1;
+}
+
+.carousel>article:nth-child(3) {
+    --i: 2;
+}
+
+.carousel>article:nth-child(4) {
+    --i: 3;
+}
+
+.carousel>article:nth-child(5) {
+    --i: 4;
+}
+
+.carousel>article:nth-child(6) {
+    --i: 5;
+}
+
+.carousel>article:nth-child(7) {
+    --i: 6;
+}
+
+.carousel>article:nth-child(8) {
+    --i: 7;
+}
+
+/* Imagen del item */
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Textos del item */
+.carousel>article>*:not(img) {
+    padding: 0 0.5rem;
+}
+
+.carousel>article>div {
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: subgrid;
+    font-size: 0.7rem;
+}
+
+.carousel>article h2 {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding-block: 0.15rem;
+}
+
+.carousel>article p {
+    margin: 0;
+}
+
+/* Estilo del botón */
+.button-30 {
+    margin: .25rem 0;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border: 0;
+    box-shadow:
+        rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        #D6D6E7 0 -3px 0 inset;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    padding: 5px 5px;
+    position: relative;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.button-30:focus {
+    box-shadow:
+        #D6D6E7 0 0 0 1.5px inset,
+        rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow:
+        rgba(45, 35, 66, 0.4) 0 4px 8px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+/* Animación */
+@keyframes marquee {
+    100% {
+        transform: translateX(calc((var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) * -1));
+    }
+}
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}

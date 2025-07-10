@@ -1,0 +1,460 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-color: #131b22;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+main {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+
+/* 2. Parrafos */
+p {
+    margin-bottom: 1.2rem;
+    max-width: 75ch;
+    color: #2e2d2d;
+    /* longitud ideal del texto (~70 caracteres) */
+    text-align: left;
+}
+
+/* 3. Títulos */
+h1,
+h2,
+h3 {
+    color: #333;
+    font-weight: 700;
+    line-height: 1.3;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+
+}
+
+/* regla par todos los divs */
+
+div {
+    margin: 1rem;
+}
+
+/* content */
+.content {
+    display: grid;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+
+.inf-container,
+.contact-container,
+.profile-container {
+    text-align: center;
+}
+
+.contact-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-container a {
+    margin: .75rem;
+}
+
+
+.contact-email-link {
+    background-color: #D93025;
+    color: #fff;
+}
+
+.contact-github-link {
+    background-color: white;
+    color: black;
+}
+
+.contact-linkedin-link {
+    background-color: #2f80ed;
+    color: #fff;
+}
+
+.contact-whatsapp-link {
+    background-color: #25D366;
+    color: black
+}
+
+
+.cv-container {
+    gap: .75rem;
+    justify-content: center;
+}
+
+/* sobre mi */
+
+.cv-container,
+.description-container, 
+.projects-container, .div-contact-container{
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.projects-container, .div-contact-container {
+    display: grid;
+   
+}
+
+
+
+
+
+.description-container h3, .projects-container h3, .div-contact-container h3{
+    color: #fff;
+    text-align: center;
+
+
+}
+
+
+.description-container p, .div-contact-container p {
+    margin: .5rem auto .5rem auto;
+    color: #fff;
+
+
+}
+
+.description-title,
+.skills-title,
+.soft-skills-title,
+.projects-title,
+.education-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+
+}
+
+.description-title img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+
+/* habilidades */
+
+
+/*SKILLS*/
+
+
+.skills {
+    display: grid;
+
+}
+
+.skills ul,
+.cv-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-content: center;
+    align-items: center;
+}
+
+.skills-list li {
+    font-size: 12px;
+    list-style: none;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+
+    background: rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    font-weight: 500;
+    color: #666;
+    align-self: center;
+
+}
+
+.skills-list li:hover {
+    background: rgba(153, 153, 153, .4);
+    color: #333;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.skills-list li img {
+    width: 18px;
+    height: 18px;
+    margin: .2rem;
+    vertical-align: middle;
+}
+
+/* botones */
+.download-cv {
+    display: flex;
+    /* Para alinear horizontalmente */
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: middle;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .2s;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.contact-email-link,
+.contact-github-link,
+.contact-linkedin-link,
+.contact-whatsapp-link {
+
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .2s;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.contact-email-link:hover {
+    background-color: #b92c22;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.contact-github-link:hover {
+    background-color: #c2c0c0c4;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.contact-linkedin-link:hover {
+    background-color: #1552a3;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.download-cv:hover, .contact-whatsapp-link:hover {
+    background-color: #439946;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transition-duration: .35s;
+}
+
+.download-cv img {
+    width: 26px;
+    height: 26px;
+}
+
+.contact-email-link:after,
+.contact-github-link:after,
+.contact-linkedin-link:after,
+.contact-whatsapp-link:after {
+    opacity: .5;
+}
+
+.contact-email-link:active,
+.contact-github-link:active,
+.contact-linkedin-link:active,
+.contact-whatsapp-link:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+/* education */
+
+.education-container {
+
+    width: 80%;
+    justify-content: center;
+
+}
+
+.education-images {
+    display: grid;
+    gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+    justify-self: center;
+}
+
+.education-images img {
+    width: 100%;
+    height: auto;
+
+    max-width: 280px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+
+.education-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Sección educativa moderna */
+.education-cards-div {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.div-title {
+
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Grid de tarjetas */
+.education-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+}
+
+/* Tarjeta individual */
+.education-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Texto */
+.education-card h4 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.edu-institution {
+    display: block;
+    font-weight: 600;
+    color: #2f80ed;
+    margin-bottom: 0.3rem;
+}
+
+.edu-dates {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.education-card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.education-card li {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 0.6rem;
+    list-style: disc;
+}
+
+
+/* contact */
+
+.div-contact-container .contact-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}

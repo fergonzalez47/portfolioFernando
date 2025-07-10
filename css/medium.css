@@ -1,0 +1,77 @@
+@media screen and (min-width: 576px) {
+    .content {
+
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 2rem;
+
+        padding: 2rem;
+        text-align: left;
+    }
+
+
+    .inf-container,
+    .contact-container {
+        text-align: left;
+        justify-content: left;
+        justify-items: left;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: initial;
+        margin-left: initial;
+    }
+
+
+    /*SKILLS*/
+
+
+    .skills-list li {
+        font-size: 14px;
+
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        font-weight: 600;
+
+    }
+
+
+    .skills-list li img {
+        width: 26px;
+        height: 26px;
+        margin-right: 0.4rem;
+        vertical-align: middle;
+    }
+
+
+    /* education */
+    .education-images {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .contact-email-link,
+    .contact-github-link,
+    .contact-linkedin-link {
+        padding: 14px 22px;
+    }
+
+    .education-images {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+        .education-card-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+}
