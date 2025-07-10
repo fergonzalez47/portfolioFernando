@@ -18,8 +18,11 @@
 /* Responsive override */
 @media (min-width: 600px) {
     :root {
-        --carousel-duration: 10s;
+        --carousel-duration: 30s;
     }
+
+        .carousel[mask] {
+            mask-image: linear-gradient(to right, transparent, white 8% 92%, transparent);   }
 }
 
 /* Carousel principal */
@@ -34,9 +37,7 @@
 
 
 /* Filtro de máscara (opcional, solo si se usa) */
-.carousel[mask] {
-    mask-image: linear-gradient(to right, transparent, white 8% 92%, transparent);
-}
+
 
 .carousel[reverse]>article {
     animation-direction: reverse;
