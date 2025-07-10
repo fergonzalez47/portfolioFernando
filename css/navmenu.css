@@ -43,6 +43,7 @@
 .nav-menu {
     display: flex;
     list-style: none;
+    opacity: 1;
 }
 
 .nav-item {
@@ -161,9 +162,10 @@
     }
 
     .nav-menu {
+        opacity: 0.9;
         position: fixed;
         left: -100%;
-        top: 110px;
+        top: 100px;
         flex-direction: column;
         background-color: var(--primary-color);
         width: 100%;
