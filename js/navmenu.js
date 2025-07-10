@@ -150,9 +150,10 @@ document.addEventListener('DOMContentLoaded', function () {
         switch (theme) {
             case 'blue':
                 
-                primaryColor = '#4bc94b';
-                secondaryColor = '#71faff';
-                accentColor = '#4bc94b';
+                primaryColor = '#131b22';
+                secondaryColor = '#4bc94b';
+                accentColor = '#71faff';
+     
                 break;
             case 'green':
                 primaryColor = '#011f06';
@@ -165,9 +166,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 accentColor = '#F88E8C';
                 break;
             default: // Default theme
-            
                 primaryColor = '#131b22';
                 secondaryColor = '#4bc94b';
+                accentColor = '#71faff';
         }
 
         // Update CSS variables
