@@ -32,10 +32,15 @@ div[id] {
 /* 2. Parrafos */
 p {
     margin-bottom: 1.2rem;
+
     max-width: 75ch;
     color: #2e2d2d;
     /* longitud ideal del texto (~70 caracteres) */
     text-align: left;
+}
+
+.contact-description {
+    padding: 1rem;
 }
 
 /* 3. Títulos */

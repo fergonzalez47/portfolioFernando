@@ -21,8 +21,9 @@
         --carousel-duration: 30s;
     }
 
-        .carousel[mask] {
-            mask-image: linear-gradient(to right, transparent, white 8% 92%, transparent);   }
+    .carousel[mask] {
+        mask-image: linear-gradient(to right, transparent, white 8% 92%, transparent);
+    }
 }
 
 /* Carousel principal */
