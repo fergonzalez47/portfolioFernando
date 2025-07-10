@@ -29,13 +29,15 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="css/navmenu.css">
+    
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/navmenu.css">
 
     <title>Fernando G | Desarrollador Frontend</title>
-    <script src="js/navmenu.js"></script>
+    <script src="js/navmenu.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 
@@ -90,10 +92,8 @@
     </header>
 
     <main>
-        <div class="content" id="home">
-            <!-- <p>Hover over the menu items to see the colorful animations.<br>Click on the color buttons at the bottom right
-                to
-                change the color theme.</p> -->
+        <div class="content reveal" id="home">
+   
             <div class="profile-container">
                 <img loading="lazy" class="profile-img" src="img/fernando.png" alt="Imagen de Fernando Gonzalez">
             </div>
@@ -115,24 +115,12 @@
                         <img loading="lazy" src="img/icons/skills/linkedin-white.svg" alt="Linkedin"><span>LinkedIn</span>
                     </a>
                 </div>
-                <!-- <div class="contact-container">
-                    <a href="mailto:fernandogonzalezvaldz@gmail.com" class="contact-email-link">
-                        fernandogonzalezvaldz@gmail.com
-                    </a>
-                    <a class="contact-github-link" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/fergonzalez47?tab=repositories">
-                        GitHub
-                    </a>
-                    <a class="contact-linkedin-link" target="_blank" rel="noopener noreferrer">
-                   Linkedin
-                    </a>
-                </div> -->
             </div>
 
         </div>
 
 
-        <div class="description-container" id="about">
+        <div class="description-container reveal" id="about">
             <div class="description-title">
                 <img loading="lazy" src="img/icons/fernando-icon.png" alt="Icono de Fernando">
                 <h3>Sobre mí</h3>
@@ -154,7 +142,7 @@
 
 
         </div>
-        <div class="cv-container" id="download">
+        <div class="cv-container reveal" id="download">
             <a class="download-cv" href="docs/fernando-gonzalez-español-2025.pdf" download>
                 <img loading="lazy" src="img/icons/download.svg" alt="Icono de descarga">
                 <span>Descargar CV</span>
@@ -166,7 +154,7 @@
         </div>
 
 
-        <div class="skills-container">
+        <div class="skills-container reveal">
             <h3 class="skills-title">
                 Hablilidades Técnicas
             </h3>
@@ -226,7 +214,7 @@
         </div>
 
 
-        <div class="soft-skills-container">
+        <div class="soft-skills-container reveal">
             <h3 class="soft-skills-title">
                 Hablilidades Personales
             </h3>
@@ -260,7 +248,7 @@
 
 
 
-        <div id="projects" class="projects-container">
+        <div id="projects" class="projects-container reveal">
             <h3 class="projects-title">Proyectos</h3>
 
             <div class="carousel" mask>
@@ -372,7 +360,7 @@
             </div>
         </div>
 
-        <div class="education-container" id="education">
+        <div class="education-container reveal" id="education">
             <h3 class="education-title">
                 Trayectoria Educacional
             </h3>
@@ -445,7 +433,7 @@
             </div>
         </div>
 
-        <div class="div-contact-container" id="contact">
+        <div class="div-contact-container reveal" id="contact">
             <h3>Contacto</h3>
             <p class="contact-description">
                 ¿Tienes un proyecto en mente? Escríbeme sin compromiso. Trabajo con clientes y negocios ofreciendo

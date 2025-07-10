@@ -65,10 +65,9 @@ h3 {
 
 /* regla par todos los divs */
 
-div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="description-container"]):not([class*="bar"]) {
+div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="description-container"]):not([class*="bar"]):not(.header div) {
     margin: 1rem;
 }
-
 /* content */
 .content {
     display: grid;
@@ -122,6 +121,7 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
 .cv-container {
     gap: .75rem;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 /* sobre mi */
@@ -133,6 +133,12 @@ div:not([class*="fslightbox"]):not([class*="cv-container"]):not([class*="descrip
     background-color: var(--primary-color);
     width: 100%;
     margin: 0 auto;
+}
+
+
+.description-container,
+.projects-container,
+.div-contact-container {
     padding: 1rem;
 }
 
@@ -619,3 +625,20 @@ footer p {
     transform: scale(1.2);
 }
 
+
+
+
+/* reveal class */
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
