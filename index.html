@@ -1,648 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Soy Fernando Gonzalez, desarrollador frontend especializado en la creación de sitios web modernos, responsivos y optimizados. Mira mi portafolio de proyectos web.">
-
-    <meta name="keywords"
-        content="Fernando Gonzalez, desarrollador frontend, portafolio web, sitios web, diseño web, HTML, CSS, JavaScript, freelance web, desarrollador en Chile">
-
-    <meta name="author" content="Fernando Gonzalez">
-
-    <meta property="og:title" content="Fernando G | Desarrollador de Software">
-    <meta property="og:description"
-        content="Portafolio de Fernando Gonzalez: desarrollo de sitios web modernos y funcionales y tecnologia moderna.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fergonzalez47.github.io/portfolioFernando/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Portafolio de Fernando Gonzalez, desarrollador frontend y full stack.">
+    <meta property="og:title" content="Fernando Gonzalez — Full Stack Developer">
     <meta property="og:image" content="img/logo.png">
-
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Hoja de estilos -->
-
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/navmenu.css">
-
-    <title>Fernando G | Desarrollador Frontend</title>
-    <script src="js/navmenu.js" defer></script>
+    <link rel="stylesheet" href="css/mobile-nav.css">
+    <title>Fernando Gonzalez — Full Stack Developer</title>
     <script src="js/main.js" defer></script>
 </head>
 
-
-<body>
+<body><a class="skip" href="#contenido">Saltar al contenido</a>
     <header class="header">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img loading="lazy" class="logo-img" src="img/logo.png" alt="Logo de Fernando Gonzalez">
-            </a>
-
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <div class="header__inner"><a class="brand" href="#inicio">Fernando<span> &lt;/&gt;</span></a>
+            <nav class="nav" id="nav"><a href="#proyectos">Proyectos</a><a href="#stack">Stack</a><a
+                    href="#trayectoria">Trayectoria</a><a href="#contacto">Contacto</a><a class="nav__cta"
+                    href="#contacto">Hablemos</a></nav>
+            <div class="controls">
+                <div class="language-switcher" aria-label="Seleccionar idioma">
+                    <button class="language-switcher__button" type="button" data-language="es" aria-pressed="true">ES</button><span>/</span><button class="language-switcher__button" type="button" data-language="en" aria-pressed="false">EN</button>
+                </div>
+                <button class="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="false"><span
+                        aria-hidden="true">☼</span><span class="theme-label">
+                        Claro
+                    </span>
+                </button>
+                <button class="menu" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+                    <i>
+                    </i>
+                    <i>
+                    </i>
+                    <i>
+                    </i>
+                </button>
             </div>
-
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link" data-index="0">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link" data-index="1">Sobre Mi</a>
-
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link" data-index="2">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link" data-index="3">Educación</a>
-
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link" data-index="4">Contacto</a>
-                    <span class="badge"></span>
-                </li>
-                <li class="nav-item">
-                    <a href="#download" class="nav-link" data-index="5">Descargar CV</a>
-                </li>
-                <div class="nav-indicator"></div>
-            </ul>
         </div>
     </header>
-
-    <main>
-        <div class="content reveal" id="home">
-
-            <div class="profile-container">
-                <img loading="lazy" class="profile-img" src="img/me.jpg" alt="Imagen de Fernando Gonzalez">
+    <main id="contenido">
+        <section class="hero" id="inicio">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <p class="availability"><i></i>Disponible para proyectos</p>
+                    <h1>Fernando<br><span>Gonzalez</span><b>.</b></h1>
+                    <p class="role">Software Engineer <b>·</b> Full Stack Developer <b>·</b> Frontend Developer</p>
+                    <p class="hero__description">Construyo productos digitales de principio a fin: interfaces precisas,
+                        APIs robustas y sistemas que escalan. Foco en código limpio, experiencia de usuario y entrega
+                        real.</p>
+                    <div class="hero__actions"><a class="button" href="#proyectos">Ver proyectos</a><a
+                            class="button button--outline" href="#contacto">Contacto</a><a class="button button--outline download-cv" href="docs/Fernando Gonzalez-FULL-STACK-SOFTWARE-ENGINEER .pdf" download>Descargar CV</a></div>
+                </div>
+                <figure class="portrait"><img src="img/me.jpg" alt="Fernando Gonzalez — desarrollador full stack">
+                    <figcaption><span>Chile</span><span><i></i>Disponible</span></figcaption>
+                </figure>
             </div>
-
-            <div class="inf-container">
-                <h1>Fernando Gonzalez</h1>
-                <h2>Frontend Developer | Full Stack Developer</h2>
-
-                <div class="contact-container">
-                    <a href="mailto:fernandogonzalezvaldz@gmail.com" class="contact-email-link">
-                        <img loading="lazy" src="img/icons/skills/gmail.svg"
-                            alt="Gmail"><span>fernandogonzalezvaldz@gmail.com</span>
-                    </a>
-                    <a class="contact-github-link" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/fergonzalez47?tab=repositories">
-                        <img loading="lazy" src="img/icons/skills/github.svg" alt="GitHub"><span>GitHub</span>
-                    </a>
-                    <a class="contact-linkedin-link" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/fergonzalez-valdez/">
-                        <img loading="lazy" src="img/icons/skills/linkedin-white.svg"
-                            alt="Linkedin"><span>LinkedIn</span>
-                    </a>
+            <!-- <div class="container hero__foot"><span>fernandogonzalez.dev</span><span>v2026.1</span></div> -->
+        </section>
+        <section class="section section--navy" id="proyectos">
+            <div class="container">
+                <div class="title-row"><span>&lt;/&gt;</span>
+                    <h2>Proyectos seleccionados</h2>
+                </div>
+                <div class="project-grid" id="project-grid">
                 </div>
             </div>
-
-        </div>
-
-
-        <div class="description-container reveal" id="about">
-            <div class="description-title">
-                <img loading="lazy" src="img/icons/fernando-icon.png" alt="Icono de Fernando">
-                <h3>Sobre mí</h3>
-            </div>
-            <p class="description">
-                Soy Fernando Gonzalez, desarrollador frontend y full stack apasionado por crear experiencias web
-                modernas, responsivas y
-                funcionales. Disfruto transformar ideas en aplicaciones intuitivas que combinan diseño, rendimiento y
-                una buena
-                experiencia de usuario.
-            </p>
-
-            <p class="description">
-                También tengo experiencia en backend, bases de datos y desarrollo de soluciones web para clientes y
-                pequeños negocios,
-                entendiendo sus necesidades para crear herramientas prácticas y efectivas. Siempre busco seguir
-                aprendiendo y mejorando
-                mis habilidades en tecnologías modernas e IA.
-            </p>
-            <div class="cv-container reveal" id="download">
-                <a class="download-cv" href="docs/Fernando Gonzalez-FULL-STACK-SOFTWARE-ENGINEER .pdf" download>
-                    <img loading="lazy" src="img/icons/download.svg" alt="Icono de descarga">
-                    <span>Descargar CV / Download Resume</span>
-                </a>
-                <!-- <a class="download-cv" href="docs/fernando-gonzalez-dev-ATS-2026-english.pdf" download>
-                    <img loading="lazy" src="img/icons/download.svg" alt="Icono de descarga">
-                    <span>Download Resume (English)</span>
-                </a> -->
-            </div>
-
-        </div>
-
-
-
-        <div class="skills-container reveal">
-            <h3 class="skills-title">
-                Hablilidades Técnicas
-            </h3>
-            <div class="skills">
-                <ul class="skills-list">
-                    <li><img loading="lazy" src="img/icons/skills/html5.svg" alt="Icono de html"><span>HTML</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/css-3.svg" alt="Icono de CSS"><span>CSS</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/js.svg"
-                            alt="Icono de JavaScript "><span>JavaScript</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/wordpress.svg"
-                            alt="Icono de Wordpress"><span>Wordpress</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/shopify.svg"
-                            alt="Icono de Shopify"><span>Shopify</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/react.svg" alt="Icono de React"><span>React</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/next.svg" alt="Icono de Next.js"><span>Next.js</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/tailwind.svg" alt="Icono de Tailwind"><span>Tailwind
-                            CSS</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/sass.svg" alt="Icono de Sass"><span>Sass</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/php.svg" alt="Icono de PHP"><span>PHP</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/node-js.svg"
-                            alt="Icono de Node.js"><span>Node.js</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/express.svg"
-                            alt="Icono de Express.js"><span>Express.js</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/sql.svg" alt="Icono de SQL"><span>SQL</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/postgresql.svg"
-                            alt="Icono de PostgreSQL"><span>PostgreSQL</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/mongodb.svg"
-                            alt="Icono de MongoDB"><span>MongoDB</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/python.svg" alt="Icono de Python"><span>Python</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/cc.svg" alt="Icono de C#"><span>C#</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/blazor.svg" alt="Icono de Blazor"><span>Blazor</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/github.svg" alt="Icono de GitHub"><span>Git &
-                            GitHub</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/api.svg" alt="Icono de APIs"><span>REST APIs</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/responsive.svg"
-                            alt="Icono de Responsive"><span>Responsive
-                            Design</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/seo.svg" alt="Icono de SEO"><span>SEO básico</span>
-                    </li>
-                    <li><img loading="lazy" src="img/icons/skills/vercel.svg" alt="Icono de Vercel"><span>Vercel /
-                            Netlify</span></li>
-                </ul>
-
-
-            </div>
-        </div>
-
-
-        <div class="soft-skills-container reveal">
-            <h3 class="soft-skills-title">
-                Hablilidades Personales
-            </h3>
-            <div class="skills">
-                <ul class="skills-list">
-                    <!-- <li><img loading="lazy" src="img/icons/skills/women.svg" alt="Icono de english"><span>Partil Totonas en COD 🥵🥵🥵</span></li> -->
-                    <li><img loading="lazy" src="img/icons/skills/english.svg"
-                            alt="Icono de english"><span>Inglés</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/communication.svg"
-                            alt="Icono de analytical"><span>Excelente Comunicación</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/analytical.svg"
-                            alt="Icono de detail"><span>Analítico</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/detail.svg"
-                            alt="Icono de Autodidacta"><span>Detallista</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/learn.svg"
-                            alt="Icono de responsability"><span>Autodidacta</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/responsability.svg"
-                            alt="Icono de trabajo en equipo"><span>Responsable y comprometido</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/teamwork.svg"
-                            alt="Icono de adaptability"><span>Trabajo en equipo</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/adaptability.svg"
-                            alt="Icono de client"><span>Adaptabilidad</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/client.svg" alt="Icono de organized"><span>Empático
-                            con el cliente</span></li>
-                    <li><img loading="lazy" src="img/icons/skills/organized.svg"
-                            alt="Icono de Responsive"><span>Organizado y planificado</span></li>
-                </ul>
-            </div>
-
-
-        </div>
-
-
-
-        <div id="projects" class="projects-container reveal">
-            <h3 class="projects-title">Proyectos</h3>
-
-            <div class="carousel" mask>
-                <article>
-                    <img loading="lazy" src="img/projects/tuventana.png" alt="Imagen de Sitio web de TuVentanaPerfecta">
-                    <h2>Tu Ventana Perfecta</h2>
-                    <div>
-                        <p>Sitio web para empresa especializada en la fabricación e instalación de ventanas, puertas,
-                            espejos, etc.
-                            Incluye cotización en línea y diseño responsivo.
-                        </p>
-                        <a class="button-30" target="_blank" rel="noopener noreferrer"
-                            href="https://fergonzalez47.github.io/vanilla-helyver/">
-                            Ver Sitio
-                        </a>
+        </section>
+        <section class="section" id="stack">
+            <div class="container">
+                <div class="title-row"><span>&lt;/&gt;</span>
+                    <h2>Stack técnico</h2>
+                </div>
+                <div class="stack">
+                    <div><span>Frontend</span>
+                        <p><b>React</b> <b>TypeScript</b> <b>Next.js</b> JavaScript (ES6+) HTML CSS / Sass Tailwind CSS
+                            Accessibility</p>
                     </div>
-                </article>
-
-                <article>
-
-                    <img loading="lazy" src="img/projects/c-s.png" alt="Imagen de sitio Cleaning Solutions">
-                    <h2>Cleaning Solutions</h2>
-                    <div>
-                        <p>Sitio web profesional diseñada para una empresa de limpieza, con enfoque en servicios,
-                            contacto
-                            rápido
-                            y presentación clara de beneficios. Sitio es responsivo y moderno.
-                        </p>
-                        <a class="button-30" target="_blank" rel="noopener noreferrer"
-                            href="https://fergonzalez47.github.io/c-s/">Ver Sitio
-                        </a>
+                    <div><span>Backend &amp; APIs</span>
+                        <p><b>Node.js</b> <b>Express.js</b> REST APIs Integración de APIs PHP Validación backend</p>
                     </div>
-
-                </article>
-
-                <article>
-                    <img loading="lazy" src="img/projects/temple.png" alt="Imagen de sitio Temple Album">
-                    <h2>Temple Album</h2>
-                    <div>
-                        <p>Aplicación web interactiva que permite filtrar imágenes en una galería según categorías o
-                            criterios definidos por el
-                            usuario, mejorando la navegación y la experiencia visual</p>
-
-                        <a class="button-30" target="_blank" rel="noopener noreferrer"
-                            href="https://fergonzalez47.github.io/wdd131/filtered-temples.html">Ver Sitio</a>
+                    <div><span>Datos &amp; CMS</span>
+                        <p><b>PostgreSQL</b> MySQL MongoDB Prisma SQL WordPress Sanity Vercel Blob</p>
                     </div>
-                </article>
-
-                <article>
-                    <img loading="lazy" src="img/projects/fygelectrica.png"
-                        alt="Imagen de Sitio web de fygelectrica.cl">
-                    <h2>FYG Electrica</h2>
-                    <div>
-                        <p>Sitio web para empresa especializada en proyectos eléctricos, normalización eléctrica y se
-                            ubica en Chile.
-                            Incluye cotización en línea y diseño responsivo.
-                        </p>
-                        <a class="button-30" target="_blank" rel="noopener noreferrer" href="https://fygelectrica.cl/">
-                            Ver Sitio
-                        </a>
+                    <div><span>Calidad &amp; rendimiento</span>
+                        <p><b>Playwright</b> Vitest Jest React Testing Lighthouse PageSpeed SEO Responsive Design</p>
                     </div>
-                </article>
-
-                <article>
-                    <img loading="lazy" src="img/projects/dashboard-racha.png" alt="Imagen de portafolio de Racha">
-                    <h2>Racha App</h2>
-                    <div>
-                        <p>Aplicación web para amantes del gimnasio estilo cuaderno digital. Puedes registrar entrenamientos, recibir
-                            consejos, y datos relacionados a tu progreso. Diseño moderno y responsivo, con enfoque en la experiencia del usuario.
-                        </p>
-
-                        <a class="button-30" target="_blank" rel="noopener noreferrer"
-                            href="https://www.fitracha.com/">
-                            Ver Sitio
-                        </a>
-                    </div>
-                </article>
-
-                <article>
-                    <img loading="lazy" src="img/projects/rota.png" alt="Imagen del sitio web ROTA Store">
-                    <h2>ROTA Store</h2>
-                    <div>
-                        <p>Sitio web para la tienda de ropa ROTA Official. El diseño
-                            es visualmente atractivo, moderno, y orientado a destacar los productos. Adaptable en
-                            cualquier
-                            dispositivo.</p>
-                        <a class="button-30" target="_blank" rel="noopener noreferrer" href="https://rotaofficial.com/">
-                            Ver Sitio
-                        </a>
-                    </div>
-                </article>
-
-
-                <article>
-                    <img loading="lazy" src="img/projects/tushower.png" alt="Imagen de sitio web Tu Shower">
-                    <h2>Tu Shower</h2>
-                    <div>
-                        <p>Sitio web moderno para empresa dedicada a la fabricación e instalación de shower doors.
-                            Diseño responsivo, y enfoque en la experiencia del cliente.
-
-                        </p>
-                        <a class="button-30" target="_blank" rel="noopener noreferrer"
-                            href="https://tushower.cl/newWebsite/">
-                            Ver Sitio
-                        </a>
-                    </div>
-                </article>
-
-                <article>
-                    <img loading="lazy" src="img/projects/zen.png" alt="Imagen de sitio web Zen Garden">
-                    <h2>Zen garden</h2>
-                    <div>
-                        <p>Sitio web moderno estilizado unicamente usando lenguaje CSS. El objetivo
-                            era cambiarlo unicamente con diseño sin tocar la estructura.</p>
-
-                        </p>
-                        <a class="button-30" target="_blank" rel="noopener noreferrer"
-                            href="https://fergonzalez47.github.io/CSS-Zen-GArden---Fernando-Gonzalez/">
-                            Ver Sitio
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <div class="education-container reveal" id="education">
-            <h3 class="education-title">
-                Trayectoria Educacional
-            </h3>
-            <div class="education-images">
-
-                <a data-fslightbox="gallery" href="img/education/bachelors-degree.png">
-                    <img loading="lazy" src="img/education/bachelors-degree.png"
-                        alt="Imagen de mi licenciatura en software">
-                </a>
-
-
-                <a data-fslightbox="gallery" href="img/education/associate.png">
-                    <img loading="lazy" src="img/education/associate.png" alt="Imagen de associate degree en software">
-                </a>
-
-                <a data-fslightbox="gallery" href="img/education/web-computer.png">
-                    <img loading="lazy" src="img/education/web-computer.png"
-                        alt="Imagen de mi certificado en programación">
-                </a>
-
-
-                <a data-fslightbox="gallery" href="img/education/software-certificate.png">
-                    <img loading="lazy" src="img/education/software-certificate.png"
-                        alt="Imagen de mi certificado en desarrollo de software">
-                </a>
-
-                <a data-fslightbox="gallery" href="img/education/web-development.png">
-                    <img loading="lazy" src="img/education/web-development.png"
-                        alt="Imagen de mi certificado en desarrollo web">
-                </a>
-                <a data-fslightbox="gallery" href="img/education/certificate-fullstack-open-grade5.png">
-                    <img loading="lazy" src="img/education/certificate-fullstack-open-grade5.png"
-                        alt="Imagen de mi certificado en desarrollo full-stack">
-                </a>
-                <a data-fslightbox="gallery" href="img/education/scrum.png">
-                    <img loading="lazy" src="img/education/scrum.png"
-                        alt="Imagen de mi certificado en metodología Scrum">
-                </a>
-                <a data-fslightbox="gallery" href="img/education/aws.png">
-                    <img loading="lazy" src="img/education/aws.png" alt="Imagen de mi certificado en AWS">
-                </a>
-
-            </div>
-            <div clas>
-                <div class="education-cards-div">
-                    <h3 class="div-title">Formación Académica</h3>
-
-                    <div class="education-card-grid">
-
-                        <!-- BACHELOR OF SCIENCE -->
-                        <div class="education-card">
-                            <h4>Bachelor of Science en Software Development</h4>
-                            <span class="edu-institution">Brigham Young University – Idaho</span>
-                            <span class="edu-dates">Enero 2019 – Octubre 2025 · Rexburg, ID</span>
-                            <ul>
-                                <li>Formación universitaria completa en desarrollo de software con enfoque práctico y
-                                    teórico.</li>
-                                <li>Aplicó principios de ingeniería de software, estructuras de datos y algoritmos.</li>
-                                <li>Desarrolló aplicaciones web y de escritorio siguiendo buenas prácticas y patrones de
-                                    diseño.</li>
-                                <li>Experiencia en trabajo colaborativo, documentación técnica y resolución de problemas
-                                    complejos.</li>
-                            </ul>
-                        </div>
-
-
-
-                        <!-- ASSOCIATE DEGREE -->
-                        <div class="education-card">
-                            <h4>Associate of Applied Science en Software Development</h4>
-                            <span class="edu-institution">Brigham Young University – Idaho</span>
-                            <span class="edu-dates">Enero 2020 – Febrero 2025 · Rexburg, ID</span>
-                            <ul>
-                                <li>Base sólida en programación aplicada y desarrollo de software práctico.</li>
-                                <li>Implementó soluciones funcionales utilizando lenguajes y herramientas modernas.</li>
-                                <li>Enfoque en lógica de programación, resolución de problemas y código mantenible.</li>
-                                <li>Preparación técnica orientada a entornos laborales reales.</li>
-                            </ul>
-                        </div>
-
-                        <!-- CERTIFICADO FULL STACK OPEN -->
-                        <div class="education-card">
-                            <h4>Certificado en Full Stack Open</h4>
-                            <span class="edu-institution">University of Helsinki</span>
-                            <span class="edu-dates">2026</span>
-                            <ul>
-                                <li>Desarrolló aplicaciones full-stack modernas utilizando React, Node.js, Express y
-                                    MongoDB.</li>
-                                <li>Implementó APIs REST, manejo de estado, autenticación y comunicación
-                                    cliente-servidor.</li>
-                                <li>Aplicó testing frontend y backend con herramientas modernas para asegurar calidad
-                                    del software.</li>
-                                <li>Trabajó con integración continua, control de versiones con Git y despliegue de
-                                    aplicaciones web.</li>
-                            </ul>
-                        </div>
-
-                        <!-- CERTIFICATE SOFTWARE DEVELOPMENT -->
-                        <div class="education-card">
-                            <h4>Certificado en Software Development</h4>
-                            <span class="edu-institution">Brigham Young University – Idaho</span>
-                            <span class="edu-dates">Agosto 2022 – Agosto 2025 · Rexburg, ID</span>
-                            <ul>
-                                <li>Desarrollo de software orientado a la solución de problemas reales en distintos
-                                    dominios.</li>
-                                <li>Evaluación sistemática de alternativas técnicas y toma de decisiones fundamentadas.
-                                </li>
-                                <li>Preparación y ejecución de planes de prueba para asegurar calidad del software.</li>
-                                <li>Fortaleció habilidades de empleabilidad y trabajo efectivo en equipo.</li>
-                            </ul>
-                        </div>
-
-
-                        <!-- CERTIFICADO WEB DEVELOPMENT -->
-                        <div class="education-card">
-                            <h4>Certificado en Web Development</h4>
-                            <span class="edu-institution">Brigham Young University - Idaho</span>
-                            <span class="edu-dates">Febrero 2022 – Agosto 2024 · Rexburg, ID</span>
-                            <ul>
-                                <li>Diseñó interfaces modernas con HTML, CSS, JavaScript y Sass.</li>
-                                <li>Implementó proyectos frontend usando React.js y Next.js.</li>
-                                <li>Aplicó buenas prácticas de SEO, diseño responsivo y usabilidad.</li>
-                                <li>Participó en desarrollo de páginas reales para pequeños negocios.</li>
-                            </ul>
-                        </div>
-
-                        <!-- CERTIFICADO COMPUTER PROGRAMMING -->
-                        <div class="education-card">
-                            <h4>Certificado en Computer Programming</h4>
-                            <span class="edu-institution">Brigham Young University - Idaho</span>
-                            <span class="edu-dates">Enero 2020 – Julio 2022 · Rexburg, ID</span>
-                            <ul>
-                                <li>Domina fundamentos de programación estructurada y orientada a objetos.</li>
-                                <li>Escribió scripts funcionales en Python, C# y PHP.</li>
-                                <li>Automatizó procesos mediante lógica condicional, bucles y funciones.</li>
-                                <li>Desarrolló paginas web dinámicas que siguen el estandar y las mejores practicas.
-                                </li>
-                            </ul>
-                        </div>
-
-
+                    <div><span>Entrega</span>
+                        <p><b>Git &amp; GitHub</b> AWS Docker CI/CD Vercel Azure Linux Figma</p>
                     </div>
                 </div>
-
             </div>
-        </div>
-
-        <div class="div-contact-container reveal" id="contact">
-            <h3>Contacto</h3>
-            <p class="contact-description">
-                    ¿Buscas un desarrollador para tu equipo o necesitas apoyo en un proyecto? Estoy disponible para colaborar con empresas,
-                    clientes y equipos creando soluciones modernas y funcionales.
-            </p>
-
-            <div class="contact-container">
-                <a href="mailto:fernandogonzalezvaldz@gmail.com" class="contact-email-link">
-                    <img loading="lazy" src="img/icons/skills/gmail.svg"
-                        alt="Gmail"><span>fernandogonzalezvaldz@gmail.com</span>
-                </a>
-                <a class="contact-github-link" target="_blank" rel="noopener noreferrer"
-                    href="https://github.com/fergonzalez47?tab=repositories">
-                    <img loading="lazy" src="img/icons/skills/github.svg" alt="GitHub"><span>GitHub</span>
-                </a>
-                <a class="contact-linkedin-link" target="_blank" rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/fergonzalez-valdez/">
-                    <img loading="lazy" src="img/icons/skills/linkedin-white.svg" alt="Linkedin"><span>LinkedIn</span>
-                </a>
-                <a class="contact-whatsapp-link" target="_blank" rel="noopener noreferrer"
-                    href="https://wa.me/+56990548452?text=Hola%20Fernando,%20vi%20tu%20portafolio%20y%20me%20interesa%20contactarte.">
-                    <img loading="lazy" src="img/icons/skills/whatsapp.svg" alt="WhatsApp"><span>WhatsApp</span>
-                </a>
+        </section>
+        <section class="section section--navy" id="trayectoria">
+            <div class="container">
+                <div class="title-row"><span>&lt;/&gt;</span>
+                    <h2>Estudios</h2>
+                </div>
+                <ol class="timeline">
+                    <li><time>2026</time><i></i>
+                        <div>
+                            <h3><button class="timeline__certificate" type="button"
+                                    data-certificate="img/education/certificate-fullstack-open-grade5.png"
+                                    data-certificate-alt="Certificado Full Stack Open">Full Stack Open</button></h3>
+                            <p class="institution">University of Helsinki</p>
+                            <p>Aplicaciones full stack con React, Node.js, APIs REST, testing e integración continua.
+                            </p>
+                        </div>
+                    </li>
+                    <li><time>2019 — 2025</time><i></i>
+                        <div>
+                            <h3><button class="timeline__certificate" type="button"
+                                    data-certificate="img/education/bachelors-degree.png"
+                                    data-certificate-alt="Certificado Bachelor of Science in Software Development">Bachelor
+                                    of Science in Software Development</button></h3>
+                            <p class="institution">Brigham Young University – Idaho</p>
+                            <p>Formación universitaria en ingeniería de software, estructuras de datos, algoritmos y
+                                desarrollo de aplicaciones.</p>
+                        </div>
+                    </li>
+                    <li><time>2020 — 2025</time><i></i>
+                        <div>
+                            <h3><button class="timeline__certificate" type="button"
+                                    data-certificate="img/education/associate.png"
+                                    data-certificate-alt="Certificado Associate of Applied Science in Software Development">Associate
+                                    of Applied Science in Software Development</button></h3>
+                            <p class="institution">Brigham Young University – Idaho</p>
+                        </div>
+                    </li>
+                    <li><time>2022 — 2024</time><i></i>
+                        <div>
+                            <h3><button class="timeline__certificate" type="button"
+                                    data-certificate="img/education/web-development.png"
+                                    data-certificate-alt="Certificado Web Development">Web Development
+                                    Certificate</button></h3>
+                            <p class="institution">Brigham Young University – Idaho</p>
+                            <p>Interfaces con HTML, CSS, JavaScript, Sass, React y Next.js; diseño responsive y SEO.</p>
+                        </div>
+                    </li>
+                </ol>
+                <div class="certs">
+                    <h3>Certificaciones</h3>
+                    <div>
+                        <article>
+                            <button class="certs__certificate" type="button"
+                                data-certificate="img/education/software-certificate.png"
+                                data-certificate-alt="Certificado Software Development">
+                                <b>Software Development Certificate</b><span>BYU–Idaho · 2025</span>
+                            </button>
+                        </article>
+                        <article>
+                            <button class="certs__certificate" type="button"
+                                data-certificate="img/education/web-computer.png"
+                                data-certificate-alt="Certificado Web computing">
+                                <b>Computer Programming Certificate</b><span>BYU–Idaho · 2022</span>
+                            </button>
+                        </article>
+                        <article>
+                            <button class="certs__certificate" type="button" data-certificate="img/education/scrum.png"
+                                data-certificate-alt="Certificado Scrum">
+                                <b>Scrum Certificate</b><span>2025</span>
+                            </button>
+                        </article>
+                        <article>
+                            <button class="certs__certificate" type="button" data-certificate="img/education/aws.png"
+                                data-certificate-alt="Certificado AWS">
+                                <b>AWS Certificate</b><span>2025</span>
+                            </button>
+                        </article>
+                        <article>
+                            <button class="certs__certificate" type="button"
+                                data-certificate="img/education/certificate-fullstack-open-grade5.png"
+                                data-certificate-alt="Certificado Full Stack Open">
+                                <b>Full Stack Open</b><span>University of Helsinki · 2026</span>
+                            </button>
+                        </article>
+                        <article>
+                            <button class="certs__certificate" type="button"
+                                data-certificate="img/education/web-development.png"
+                                data-certificate-alt="Certificado Full Stack Open">
+                                <b>Web Development Certificate</b><span>BYU–Idaho · 2024</span>
+                            </button>
+                        </article>
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-        <div class="about-more-div">
-            <h3 class="div-title">Más sobre mí</h3>
-
-            <div class="interests-grid">
-                <article class="interest-card">
-                    <img loading="lazy" src="img/about/1.jpg" alt="Fernando caminando en la naturaleza">
-                    <p>Disfruto caminar en la naturaleza, escalar y descubrir paisajes naturales. Estar al aire libre me
-                        inspira
-                        y recarga mi energía.</p>
-                </article>
-
-                <article class="interest-card">
-                    <img loading="lazy" src="img/about/mar.jpg" alt="Fernando en buzios">
-                    <p>Me gusta pasar tiempo en la playa y nadar en el mar. Es una forma de relajarme y conectar con la
-                        naturaleza.</p>
-                </article>
-
-                <article class="interest-card">
-                    <img loading="lazy" src="img/about/9.jpg" alt="Fernando haciendo trekking">
-                    <p>Las actividades físicas intensas como la natación, la escalada o el trekking también están entre
-                        mis
-                        favoritas.</p>
-                </article>
-
-
-
-
-                <article class="interest-card">
-                    <img loading="lazy" src="img/about/5.jpg" alt="Fernando con montaña de fondo">
-                    <p>Me gusta capturar momentos en lugares naturales hermosos. Siempre llevo mi cámara cuando exploro
-                        nuevos
-                        rincones.</p>
-                </article>
-
-                <article class="interest-card">
-                    <img loading="lazy" src="img/about/3.jpg" alt="Fernando con tabla de surf naranja">
-                    <p>También me apasiona el surf. Disfruto los días de marea alta porque puedo tomar mejores olas y
-                        conectar
-                        con el mar.</p>
-                </article>
+        </section>
+        <section class="section contact" id="contacto">
+            <div class="container">
+                <div class="title-row"><span>&lt;/&gt;</span>
+                    <h2>Contacto</h2>
+                </div>
+                <div class="contact__grid">
+                    <div>
+                        <h3>¿Tienes un proyecto<br>en mente?<br><span>Hablemos.</span></h3>
+                        <p>Abierto a oportunidades freelance, roles full-time y colaboraciones técnicas de largo plazo.
+                        </p><a class="button" href="mailto:fernandogonzalezvaldz@gmail.com">Enviar mensaje →</a>
+                    </div>
+                    <div class="contact__links"><a
+                            href="mailto:fernandogonzalezvaldz@gmail.com"><span>Email</span><b>fernandogonzalezvaldz@gmail.com
+                                ↗</b></a><a href="https://www.linkedin.com/in/fergonzalez-valdez/" target="_blank"
+                            rel="noopener noreferrer"><span>LinkedIn</span><b>/in/fergonzalez-valdez ↗</b></a><a
+                            href="https://github.com/fergonzalez47" target="_blank"
+                            rel="noopener noreferrer"><span>GitHub</span><b>github.com/fergonzalez47 ↗</b></a><a
+                            href="https://wa.me/56990548452" target="_blank"
+                            rel="noopener noreferrer"><span>WhatsApp</span><b>+56 9 9054 8452 ↗</b></a></div>
+                </div>
             </div>
-        </div>
-
-
-
-
-
-        <div class="gallery-grid">
-            <a data-fslightbox="gallery" href="img/about/7.jpg">
-                <img loading="lazy" src="img/about/7.jpg" alt="Imagen de Fernando">
-            </a>
-            <a data-fslightbox="gallery" href="img/about/8.jpg">
-                <img loading="lazy" src="img/about/8.jpg" alt="Imagen de Fernando">
-            </a>
-            <a data-fslightbox="gallery" href="img/about/9.jpg">
-                <img loading="lazy" src="img/about/9.jpg" alt="Imagen de Fernando">
-            </a>
-            <a data-fslightbox="gallery" href="img/about/10.jpg">
-                <img loading="lazy" src="img/about/10.jpg" alt="Imagen de Fernando">
-            </a>
-        </div>
-
-        <div class="theme-buttons">
-            <button class="theme-btn default" data-theme="default"></button>
-            <button class="theme-btn green" data-theme="green"></button>
-            <button class="theme-btn red" data-theme="red"></button>
-        </div>
+        </section>
     </main>
-
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-left">
-                <img src="img/logo.png" alt="Logo de Fernando González" class="footer-logo">
-                <p>© 2025 Fernando González. Desarrollador Frontend/Full Stack & de Software. Todos los derechos reservados.</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="#home">Inicio</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#education">Educación</a>
-                <a href="#contact">Contacto</a>
-            </div>
-
-            <div class="footer-social">
-                <a href="mailto:fernandogonzalezvaldz@gmail.com" target="_blank">
-                    <img src="img/icons/skills/gmail.svg" alt="Gmail" class="no-invert">
-                </a>
-                <a href="https://github.com/fergonzalez47" target="_blank" rel="noopener noreferrer">
-                    <img src="img/icons/skills/github.svg" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/fergonzalez-valdez/" target="_blank" rel="noopener noreferrer">
-                    <img src="img/icons/skills/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://wa.me/569XXXXXXXX" target="_blank">
-                    <img src="img/icons/skills/whatsapp.svg" alt="WhatsApp">
-                </a>
-            </div>
+    <dialog class="certificate-dialog" aria-labelledby="certificate-title">
+        <div class="certificate-dialog__header">
+            <p id="certificate-title">Certificado</p><button class="certificate-dialog__close" type="button"
+                aria-label="Cerrar certificado">×</button>
         </div>
+        <img class="certificate-dialog__image" src="" alt="">
+    </dialog>
+    <footer>
+        <div class="container"><a class="brand" href="#inicio">Fernando<span> &lt;/&gt;</span></a><span>Fernando Gonzalez · Full Stack
+                Developer · Chile<br>Por tradición a mis inicios en software, este portafolio está hecho únicamente con HTML, CSS y JavaScript.</span><span>© 2026</span></div>
     </footer>
-
-    <script src="fslightbox.js"></script>
 </body>
 
 </html>

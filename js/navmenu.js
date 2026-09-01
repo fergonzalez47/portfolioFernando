@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 
-    // Reset indicator position when mouse leaves the nav menu
     navMenu.addEventListener('mouseleave', function () {
         if (window.innerWidth > 768) {
             const activeLink = document.querySelector('.nav-link.active');
