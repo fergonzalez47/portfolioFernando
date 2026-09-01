@@ -76,7 +76,7 @@ const projectCopy = {
 const copy = {
   es: {
     nav: ['Proyectos', 'Stack', 'Estudios', 'Contacto', 'Hablemos'], availability: 'Disponible para proyectos',
-    hero: 'Construyo productos digitales de principio a fin: interfaces precisas, APIs robustas y sistemas que escalan. Foco en código limpio, experiencia de usuario y entrega real.',
+    hero: 'Diseño y desarrollo soluciones web completas, integrando interfaces ágiles con arquitecturas backend de alto rendimiento. Especializado en automatizar flujos comerciales, optimizar tiempos de carga y llevar productos desde la idea hasta producción.',
     actions: ['Ver proyectos', 'Contacto', 'Descargar CV'], titles: ['Proyectos seleccionados', 'Stack técnico', 'Estudios', 'Contacto'],
     stack: [['Frontend', '<b>React</b> <b>TypeScript</b> <b>Next.js</b> JavaScript (ES6+) HTML CSS / Sass Tailwind CSS Accessibility'], ['Backend &amp; APIs', '<b>Node.js</b> <b>Express.js</b> REST APIs Integración de APIs PHP Validación backend'], ['Datos &amp; CMS', '<b>PostgreSQL</b> MySQL MongoDB Prisma SQL WordPress Sanity Vercel Blob'], ['Calidad &amp; rendimiento', '<b>Playwright</b> Vitest Jest React Testing Lighthouse PageSpeed SEO Responsive Design'], ['Entrega', '<b>Git &amp; GitHub</b> AWS Docker CI/CD Vercel Azure Linux Figma']],
     education: ['Aplicaciones full stack con React, Node.js, APIs REST, testing e integración continua.', 'Formación universitaria en ingeniería de software, estructuras de datos, algoritmos y desarrollo de aplicaciones.', '', 'Interfaces con HTML, CSS, JavaScript, Sass, React y Next.js; diseño responsive y SEO.'],
@@ -84,7 +84,7 @@ const copy = {
   },
   en: {
     nav: ['Projects', 'Stack', 'Education', 'Contact', "Let's talk"], availability: 'Available for projects',
-    hero: 'I build digital products end to end: precise interfaces, robust APIs, and systems that scale. Focused on clean code, user experience, and real delivery.',
+    hero: 'I design and build end-to-end web solutions, combining responsive interfaces with high-performance backend architectures. Specialized in automating business workflows, optimizing load times, and taking products from concept to production.',
     actions: ['View projects', 'Contact', 'Download Resume'], titles: ['Selected projects', 'Technical stack', 'Education', 'Contact'],
     stack: [['Frontend', '<b>React</b> <b>TypeScript</b> <b>Next.js</b> JavaScript (ES6+) HTML CSS / Sass Tailwind CSS Accessibility'], ['Backend &amp; APIs', '<b>Node.js</b> <b>Express.js</b> REST APIs API integration PHP Backend validation'], ['Data &amp; CMS', '<b>PostgreSQL</b> MySQL MongoDB Prisma SQL WordPress Sanity Vercel Blob'], ['Quality &amp; performance', '<b>Playwright</b> Vitest Jest React Testing Lighthouse PageSpeed SEO Responsive Design'], ['Delivery', '<b>Git &amp; GitHub</b> AWS Docker CI/CD Vercel Azure Linux Figma']],
     education: ['Full-stack applications with React, Node.js, REST APIs, testing, and continuous integration.', 'University education in software engineering, data structures, algorithms, and application development.', '', 'Interfaces with HTML, CSS, JavaScript, Sass, React, and Next.js; responsive design and SEO.'],
